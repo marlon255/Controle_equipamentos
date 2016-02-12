@@ -1,0 +1,59 @@
+Global
+----------------------------------------
+div#fundo_pesq_pd, div#cadastro_cima, div#cadastro_baixo, form#form_cadastro, div#conteudo
+
+cadastro_comb.html
+----------------------------------------
+input#comb_nome, input#comb_pref, select#comb_un_medida, div#cons_comb, ul#cabecalho_comb, div#cad_comb, input#cad_nome_comb, input#cad_pref_comb, select#cad_unid_comb, form#editar_cad_comb, form#apagar_cad_comb, input#cad_comb_button, input#salvar_cad_comb
+
+cadastro_equi.html
+----------------------------------------
+select#cad_equi, input#cad_mod, input#cad_serie, input#cad_plac, input#cad_chassis, input#cad_pref, input#cad_data, input#cad_hori, input#cad_km, select#cad_propri, input#cad_consumo, input#cad_fabric, input#cad_unid_medida, input#cad_hor_min, input#cadastro_equi_valor, input#cad_equi_button
+
+cadastro_esto.html
+----------------------------------------
+input#cad_esto_pref, input#cad_esto_capac, select#cad_esto_un_medida, div#botao_cat_esto, input#salve_cad_esto, input#salve_cad_esto, input#buscar_cad_esto, div#cons_esto, ul#cabecalho_esto, div#consu_esto, input#consu_esto_pref, input#consu_esto_cap, select#cons_esto_comb, input#cons_un_medida, input#cad_esto_edit, input#cad_esto_del
+
+cadastro_propr.html
+----------------------------------------
+input#raz_soc, input#nom_fan, input#cnpj, input#ins_est, input#ins_mun, input#cep, input#est, input#cid, input#bairro, input#endereco, input#compl, input#tel, input#email, input#cad_propri_botao
+
+cons_ent_esto.html
+----------------------------------------
+input#consu_ent_dia, input#consu_ent_mes, input#consu_ent_ano input#consu_ent_pref, input#consu_ent_n_doc, select#consu_ent_esto, select#consu_ent_comb, div#cons_ent_esto, ul#cabecalho_ent_esto, input#botao_cons_ent_esto, select#consulta_ent_for, input#consulta_ent_quant, input#consulta_ent_esto, input#consulta_ent_comb, input#consulta_ent_valor, form#editar_ent_esto, form#salvar_ent_esto, form#apagar_ent_esto, input#editar_ent_esto_botao, input#salvar_ent_esto_botao, input#apagar_ent_esto_botao
+
+cons_equip.html
+----------------------------------------
+input#cons_equip_pref, select#cons_equip_equip, input#cons_equip_mod, input#cons_equip_serie, input#cons_equip_placa, input#cons_equip_chassis, input#cons_equip_propri, input#cons_equip_h_min, select#cons_equip_und_med, input#cons_equip_consumo, cons_equip_valor, input#cons_equip_data_cheg, input#cons_equip_hori_cheg, input#cons_equip_ano_fabric, input#cons_equip_salva, input#cons_equip_del
+
+cons_pd.html
+----------------------------------------
+input#cons_pd_data_dia_ini, input#cons_pd_data_mes_ini, input#cons_pd_data_ano_ini, input#cons_pd_pref, input#cons_pd_n_doc, input#cons_pd_data_dia_fin, input#cons_pd_data_mes_fin, input#cons_pd_data_ano_fin, input#cons_pd_botao, div#resultado_pesq_pd, ul#cabecalho_pd, div#consulta_da_pd, input#consulta_pd_data, input#consulta_pd_pref, input#consulta_pd_n_doc, input#consulta_pd_hori_ini, input#consulta_pd_hori_fin, input#consulta_pd_km_ini, input#consulta_pd_km_fin, input#consulta_pd_hora_ini, input#consulta_pd_hora_fin, input#consulta_pd_hora_manut, input#botao_cons_pd_editar, input#botao_cons_pd_salvar, input#botao_cons_pd_apagar
+
+cons_propr.html
+----------------------------------------
+input#cons_propr_cnpj, input#cons_propr_raz_soc, input#cons_propr_nom_fan, input#cons_propr_ins_est, input#cons_propr_cad_equi, input#cons_propr_cep, input#cons_propr_est, input#cons_propr_cid, input#cons_propr_bairro, input#cons_propr_endereco, input#cons_propr_compl, input#cons_propr_tel, input#cons_propr_email, input#botao_cons_propr_salvar, input#botao_cons_propr_apagar
+
+cons_sai_esto.html
+----------------------------------------
+input#cons_sai_esto_data, input#cons_sai_esto_pref, input#cons_sai_esto_n_doc, select#cons_sai_esto_esto, select#cons_sai_esto_comb, input#botao_cons_sai_esto_consultar, input#consulta_sai_esto_data, input#consulta_sai_esto_n_doc, select#consulta_sai_esto_equip, input#consulta_sai_esto_qntd, input#consulta_sai_esto_esto, input#consulta_sai_esto_comb, input#consulta_sai_esto_valor, input#consulta_sai_esto_consumo, input#consulta_sai_esto_editar, input#consulta_sai_esto_salvar, input#consulta_sai_esto_apagar
+
+dig_ent_abas.html
+----------------------------------------
+input#dig_ent_abas_dia, input#dig_ent_abas_mes, input#dig_ent_abas_ano, input#dig_ent_abas_n_doc, input#dig_ent_abas_forn, input#dig_ent_abas_qntd, select#dig_ent_abas_esto, select#dig_ent_abas_comb, input#dig_ent_abas_valor, input#dig_ent_abas_un_medida, input#dig_ent_abas_var_und, input#dig_ent_abas_qntd_esto, input#dig_ent_abas_capacidade, input#dig_ent_abas_salvar
+
+dig_pd.html
+----------------------------------------
+input#dig_pd_dia, input#dig_pd_mes, input#dig_pd_ano, input#dig_pd_doc, input#dig_pd_pref, input#dig_pd_equi, input#dig_pd_mod, input#dig_pd_serie_placa, select#dig_pd_stat_equip, input#dig_pd_hora_ini, input#dig_pd_hora_fin, input#dig_pd_km_ini, input#dig_pd_km_fin, input#dig_pd_hori_ini, input#dig_pd_hori_fin, input#dig_pd_botao_add, input#dig_pd_deletar_pd, button#dig_pd_salvar, button#dig_pd_limpar
+
+dig_sai_abas.html
+----------------------------------------
+input#dig_sai_abas_dia, input#dig_sai_abas_mes, input#dig_sai_abas_ano, input#dig_sai_abas_doc, input#dig_sai_abas_pref, input#dig_sai_abas_equi, input#dig_sai_abas_mod, input#dig_sai_abas_serie_placa, select#dig_sai_abas_custo, select#dig_sai_abas_esto, select#dig_sai_abas_tipo_comb, input#dig_sai_abas_tot_esto, input#dig_sai_abas_consu_anterior, input#dig_sai_abas_data_ult_abas, input#dig_sai_abas_hori_ult_abas, input#dig_sai_abas_km_ult_abas, input#dig_sai_abas_hora_atual, input#dig_sai_abas_hori_atual, input#dig_sai_abas_km_atual, input#dig_sai_abas_consumo_hori, input#dig_sai_abas_consumo_km, input#dig_sai_abas_salvar
+
+index.html
+----------------------------------------
+
+
+tipo_equi.html
+----------------------------------------
+input#tipo_equi, input#sigla_equi, input#tipo_equi_cadastrar, div#consulta_tipo_equi, ul#cabecalho_tipo_equi, div#change_tipo_equi, input#seacher_tipo_equi, input#seacher_tipo_sigla, input#editar_tipo_equi, input#salvar_tipo_equi, input#apagar_tipo_equi

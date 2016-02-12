@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>PhpFiddle Initial Code</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script>
+$().ready(function() {
+
+
+    $('#clicker').click(function() {
+        $('input').each(function() {
+            if ($(this).attr('disabled')) {
+                $(this).removeAttr('disabled');
+            }
+            else {
+                $(this).attr({
+                    'disabled': 'disabled'
+                });
+            }
+        });
+    });
+});
+</script>
+
+<style type="text/css">
+	
+</style>
+
+</head>
+
+<body>
+	<form action="teste.html">
+		<input id="dis" type="text" disabled>
+		<button type="button" id='clicker' border="30px" style="cursor: pointer;">Editar</button>
+		<button type="button" id="cadastrar" name="cadastrar" value="Salvar" style="cursor: pointer;">Salvar</button>
+	</form>
+<?php
+
+?>
+
+</body>
+</html>
+

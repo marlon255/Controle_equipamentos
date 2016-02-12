@@ -1,0 +1,474 @@
+/* CSS Universal */
+select{
+	width: 173px;
+	height: 21px;
+}
+div#botao_equi{
+	width: 500px;
+	display: block;
+	margin: 0;
+	padding: 4px;
+	float: left;
+}
+.dia{
+	width: 40px;
+}
+.mes{
+	width: 40px;
+}
+.ano{
+	width: 55px;
+}
+/* Tamanho da lacuna do input DOCUMENTO */
+.dig_doc{
+	width: 173px;
+}
+/* CSS Universal do Conteudo */
+div#conteudo{
+	padding: 0;
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	width: 550px;
+}
+div#cadastro_cima{
+	width: 534px;
+	display: block;
+	margin: 0;
+	padding: 4px;
+	float: left;
+	border-bottom: 1px dashed;
+}
+div#ln{
+	width: 170px;
+	height: 40px;
+	display: block;
+	float: left;
+	margin-right: 8px;
+	
+}
+div#cadastro_baixo{
+	width: 534px;
+	display: block;
+	margin: 0;
+	padding: 4px;
+	float: left;
+	border-bottom: 1px dashed;
+}
+/* CSS Cabeçalho */
+div#cabecalho{
+	height: 120px;
+	width: 800px;
+/*	border: 1px solid; */
+	margin-left: 150px;
+	background: url('../img/background/background.png') no-repeat center;
+	background-size: 406px 120px;
+	box-shadow: 1px 1px 1px;
+}
+div#cabecalho h3{
+	position: relative;
+	top: 50px;
+}
+/* CSS Menu */
+ul{
+	list-style-type: none;
+	float: left;
+	padding: 0;
+	padding-left: 8px;
+	width: 130px;
+}
+li#li_menu{
+	padding: 5px;
+	/*border: 1px solid #1E90FF;
+	border-radius: 2px;*/
+	background-color: #4682B4;
+	text-align: right;
+}
+ul#ul_menu a{
+	text-decoration: none;
+	color: #FFF;
+	font-size: 13pt;
+}
+ul#ul_menu li:hover{
+	text-decoration: none;
+	color: #FFF;
+	font-size: 13pt;
+	background-color: #1E90FF;
+}
+ul#drop_ul_menu{
+	height: 0px;
+	width: 0px;
+	-webkit-transition: all .25s ease;
+       -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+}
+li#li_menu.dropando:hover li{
+	display: block;
+}
+li#drop_menu{
+	padding: 5px;
+	/*border: 1px solid #1E90FF;
+	border-radius: 2px;*/
+	background-color: #4682B4;
+	position: relative;
+	left: 117px;
+	top: -5px;
+	display: none;
+	width: 150px;
+}
+ul#ul_menu a{
+	text-decoration: none;
+	color: #FFF;
+	font-size: 13pt;
+}
+li#drop_menu:hover{
+	text-decoration: none;
+	color: #FFF;
+	font-size: 13pt;
+	background-color: #1E90FF;
+}
+div#menu{
+	height: 500px;
+	width: 150px;
+	display: block;
+	float: left;
+/*	border: 1px solid; */
+	margin: 0;
+}
+.dropando{
+	cursor: pointer;
+}
+/* CSS Conteudo */
+/* Index */
+iframe{
+	display: block;
+	float: left;
+	height: 600px;
+	width: 800px;
+	border: 1px inset;
+	box-shadow: 1px 2px 2px;
+	border-radius: 0px;
+}
+/* Paginas com pesquisa */
+div#visualizar{
+	position: fixed;
+	bottom: 3%;
+	right: 15%;
+	width: 650px;
+	height:230px;
+	background-color: #EEE;
+}
+div#visualizar table{
+	position: relative;
+	bottom: -15;
+	left: 25;
+	width: 600px;
+	border: 1px dotted;
+	text-align: center;
+}
+div#visualizar tr{
+	height:23px;
+}
+td#del{
+	width: 15px;
+}
+/*imagem para deletar pd digitada */
+input#apagar_tipo_equi{
+	height: 20px;
+	width: 20px;
+	float: right;
+}
+/* Digitação de PD */
+div#nomeclatura{
+	position: absolute;
+	top: 56%;
+	left: 58px;
+	height: 20px;
+	width: 600px;
+	text-align: center;
+}
+div#nomeclatura div{
+	margin-right: 4.5px;
+	float:left;
+}
+div#titulo{
+	width: 91px;
+}
+button#dig_pd_salvar{
+	position:relative;
+	top: 270px;
+	left: 20px;
+	width: 90px;
+}
+button#dig_pd_limpar{
+	position:relative;
+	top: 280px;
+	left: 20px;
+	width: 90px;
+}
+/* universal de todas consultas */
+div#fundo_pesq_pd{
+	width: 740px;
+	height: 300px;
+	overflow-x:scroll;
+	background-color: #FDF5E6;
+	position: fixed;
+	left: 30px;
+	top: 250px;
+}
+div#resultado_pesq_pd{
+	width: 1870px;
+	margin:0;
+}
+ul#cabecalho_pd{
+	list-style-type:none;
+	width: 1859px;
+	margin:0;
+	padding-left: 0;
+	padding-top: 0;
+	border: 1px solid;
+	height: 18px;
+}
+ul#consulta_da_pd{
+	list-style-type:none;
+	width: 1860px;
+	margin:0;
+	padding-left: 0;
+	padding-top: 0;
+	border: 2px dotted;
+	height: 20px;
+}
+/* Consulta Tipo de Equipamento */
+.teste{
+	display: block;
+	float: left;
+	width: 55px;
+	margin-right: 5px;
+	height: 18px;
+	padding: 0;
+}
+div#fundo_tipo_equi{
+	width: 740px;
+	height: 400px;
+	overflow-x:scroll;
+	background-color: #FDF5E6;
+	position: fixed;
+	left: 30px;
+	top: 150px;	
+}
+div#change_tipo_equi{
+	width: 550px;
+}
+ul#cabecalho_tipo_equi{
+	list-style-type:none;
+	width: 465px;
+	margin:0;
+	padding-left: 0;
+	padding-top: 0;
+	border: 1px solid;
+	height: 20px;
+}
+div#consulta_tipo_equi ul li{
+	display: block;
+	float: left;
+	width: 150px;
+	padding-right: 4px;
+	border-right: 1px dotted;
+	margin:0;
+	padding-top: 0;
+	text-align: center;
+}
+input.seacher_tipo_equi, input.seacher_tipo_sigla{
+	display: block;
+	float: left;
+	width: 150px;
+	border-right: 1px solid;
+	border-left: 0px solid;
+	border-top: 0px solid;
+	border-bottom: 0px solid;
+	margin-right: 5px;
+	height: 18px;
+}
+/* pesquisa de pd */
+div#resultado_pesq_pd ul li{
+	display: block;
+	float: left;
+	width: 150px;
+	padding-right: 4px;
+	border-right: 1px dotted;
+	margin:0;
+	padding-top: 0;
+	text-align: center;
+}
+div#resultado_pesq_pd input{
+	display: block;
+	float: left;
+	width: 150px;
+	border-right: 1px solid;
+	border-left: 0px solid;
+	border-top: 0px solid;
+	border-bottom: 0px solid;
+	margin-right: 5px;
+}
+/* pesquisa de consumo e cadastro de combustivel */
+div#cons_comb{
+	width: 778px;
+	margin:0;
+}
+ul#cabecalho_comb{
+	list-style-type:none;
+	width: 800px;
+	margin:0;
+	padding-left: 0;
+	padding-top: 0;
+	border: 1px solid;
+	height: 18px;
+}
+ul#cabecalho_comb{
+	list-style-type:none;
+	width: 774px;
+	margin:0;
+	padding-left: 0;
+	padding-top: 0;
+	border: 1px solid;
+	height: 20px;
+}
+div#cons_comb ul li{
+	display: block;
+	float: left;
+	width: 150px;
+	padding-right: 4px;
+	border-right: 1px dotted;
+	margin:0;
+	padding-top: 0;
+	text-align: center;
+}
+div#cons_comb input{
+	display: block;
+	float: left;
+	width: 150px;
+	border-right: 1px solid;
+	border-left: 0px solid;
+	border-top: 0px solid;
+	border-bottom: 0px solid;
+	margin-right: 5px;
+}
+div#cons_comb select{
+	display: block;
+	float: left;
+	width: 150px;
+	border-right: 1px solid;
+	border-left: 0px solid;
+	border-top: 0px solid;
+	border-bottom: 0px solid;
+	margin-right: 5px;
+	height: 17px;
+}
+/* cadastro de estoque */
+div#cons_esto{
+	width: 936px;
+	margin:0;
+}
+ul#cabecalho_esto{
+	list-style-type:none;
+	width: 930px;
+	margin:0;
+	padding-left: 0;
+	padding-top: 0;
+	border: 1px solid;
+	height: 18px;
+}
+ul#cabecalho_esto{
+	list-style-type:none;
+	width: 930px;
+	margin:0;
+	padding-left: 0;
+	padding-top: 0;
+	border: 1px solid;
+	height: 20px;
+}
+div#cons_esto ul li{
+	display: block;
+	float: left;
+	width: 150px;
+	padding-right: 4px;
+	border-right: 1px dotted;
+	margin:0;
+	padding-top: 0;
+	text-align: center;
+}
+div#cons_esto input{
+	display: block;
+	float: left;
+	width: 150px;
+	border-right: 1px solid;
+	border-left: 0px solid;
+	border-top: 0px solid;
+	border-bottom: 0px solid;
+	margin-right: 5px;
+}
+div#cons_esto select{
+	display: block;
+	float: left;
+	width: 150px;
+	border-right: 1px solid;
+	border-left: 0px solid;
+	border-top: 0px solid;
+	border-bottom: 0px solid;
+	margin-right: 5px;
+	height: 17px;
+}
+/* consulta entrada e saida de estoque */
+div#cons_ent_esto{
+	width: 1396px;
+	margin:0;
+}
+ul#cabecalho_ent_esto{
+	list-style-type:none;
+	width: 1396px;
+	margin:0;
+	padding-left: 0;
+	padding-top: 0;
+	border: 1px solid;
+	height: 20px;
+}
+div#cons_ent_esto ul li{
+	display: block;
+	float: left;
+	width: 150px;
+	padding-right: 4px;
+	border-right: 1px dotted;
+	margin:0;
+	padding-top: 0;
+	text-align: center;
+}
+div#cons_ent_esto input{
+	display: block;
+	float: left;
+	width: 149px;
+	border-right: 1px solid;
+	border-left: 0px solid;
+	border-top: 0px solid;
+	border-bottom: 0px solid;
+	margin-right: 5px;
+}
+div#cons_ent_esto select{
+	display: block;
+	float: left;
+	width: 150px;
+	border-right: 1px solid;
+	border-left: 0px solid;
+	border-top: 0px solid;
+	border-bottom: 0px solid;
+	margin-right: 5px;
+	height: 17px;
+}
+
+
+/*id='salvar_tipo_equi' name='salvar_tipo_equi'
+				 id='salvar_tipo_equi' name='salvar_tipo_equi'
+				 <img src='img/dig_pd/salvar.png'>
+*/
