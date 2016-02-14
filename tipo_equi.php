@@ -14,7 +14,7 @@ setlocale(LC_ALL, 'pt_BR.utf8');
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="css/estilo.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-<title>Tipos de Equipamentos</title>
+<title>Tipos de Equipamentos ok</title>
 
 
 <script type="text/javascript" src="js/xmlhttp.js"></script> 	<!-- AJAX -->
