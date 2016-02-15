@@ -11,7 +11,7 @@
 			<li id="li_menu" class="dropando"><a>Cadastro &raquo;</a>
 			    <ul id="drop_ul_menu">
 				<a href="tipo_de_equipamento/tipo_equi.php" target="iframe"><li id="drop_menu">Tipo de equipamento</li></a>
-				<a href="cadastro_propr.php" target="iframe"><li id="drop_menu">Proprietário</li></a>
+				<a href="cadastro_proprietario/cadastro_propr.php" target="iframe"><li id="drop_menu">Proprietário</li></a>
 				<a href="cadastro_equi.php" target="iframe"><li id="drop_menu">Equipamento</li></a>
 				<a href="cadastro_comb.php" target="iframe"><li id="drop_menu">Combustível</li></a>
 				<a href="cadastro_esto.php" target="iframe"><li id="drop_menu">Estoque</li></a>
