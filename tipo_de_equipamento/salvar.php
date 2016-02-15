@@ -1,7 +1,7 @@
 <?php
 	if(isset($_POST['salvar_tipo_equi'.$exibir['id']])){
 		if(empty($_POST['seacher_tipo_equi'.$exibir['id']])&&empty($_POST['seacher_tipo_sigla'.$exibir['id']])){
-					echo "<script>alert('Edite um campo para Salvar!')</script>";
+					echo "<script>alert('Edite um campo antes de Salvar!')</script>";
 				}else{
 				$tipo_new = $_POST['seacher_tipo_equi'.$exibir['id']];
 				$sigla_new = $_POST['seacher_tipo_sigla'.$exibir['id']];
