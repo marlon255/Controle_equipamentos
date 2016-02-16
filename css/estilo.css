@@ -322,6 +322,15 @@ div#resultado_pesq_pd input{
 	height: 18px;
 	padding: 0;
 }
+div#fundo_cadastro_comb{
+	width: 740px;
+	height: 380px;
+	overflow-x:scroll;
+	background-color: #FDF5E6;
+	position: fixed;
+	left: 30px;
+	top: 180px;	
+}
 div#consumo_comb{
 	width: 645px;
 	margin:0;

@@ -1,6 +1,6 @@
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="ISO-8859-1">
 <link rel="stylesheet" type="text/css" href="../css/estilo.css">
 <script>
 function formatar(mascara, documento){
@@ -28,7 +28,7 @@ function formatar(mascara, documento){
 			<div id="ln">
 				<label>Equipamento</label>
 				<select name="equi" id="cad_equi" required>
-				<option>Selecione o equipamento</option>
+				<option disabled selected>Selecione o equipamento</option>
 				<?php
 					if($exib_equip > 0){
 						do{
@@ -59,7 +59,7 @@ function formatar(mascara, documento){
 			<div id="ln">
 				<label>Proprietário</label><br>
 				<select name="propri" id="cad_propri" required>
-				<option>Selecione o proprietário</option>
+				<option disabled selected>Selecione o proprietário</option>
 			<?php
 				if($exib_propri > 0){
 					do{
