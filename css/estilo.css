@@ -242,7 +242,7 @@ ul#consulta_da_pd{
 	height: 20px;
 }
 /* Consulta Tipo de Equipamento */
-.teste{
+.input_button{
 	display: block;
 	float: left;
 	width: 55px;
@@ -314,29 +314,28 @@ div#resultado_pesq_pd input{
 	margin-right: 5px;
 }
 /* pesquisa de consumo e cadastro de combustivel */
-div#cons_comb{
-	width: 778px;
-	margin:0;
-}
-ul#cabecalho_comb{
-	list-style-type:none;
-	width: 800px;
-	margin:0;
-	padding-left: 0;
-	padding-top: 0;
-	border: 1px solid;
+.comb_button{
+	display: block;
+	float: left;
+	width: 55px;
+	margin-right: 5px;
 	height: 18px;
+	padding: 0;
 }
-ul#cabecalho_comb{
+div#consumo_comb{
+	width: 645px;
+	margin:0;
+}
+div#nome_comb ul{
 	list-style-type:none;
-	width: 774px;
+	width: 620px;
 	margin:0;
 	padding-left: 0;
 	padding-top: 0;
 	border: 1px solid;
 	height: 20px;
 }
-div#cons_comb ul li{
+div#nome_comb ul li{
 	display: block;
 	float: left;
 	width: 150px;
@@ -346,7 +345,7 @@ div#cons_comb ul li{
 	padding-top: 0;
 	text-align: center;
 }
-div#cons_comb input{
+div#exibir_comb select,input.teste{
 	display: block;
 	float: left;
 	width: 150px;
@@ -355,17 +354,7 @@ div#cons_comb input{
 	border-top: 0px solid;
 	border-bottom: 0px solid;
 	margin-right: 5px;
-}
-div#cons_comb select{
-	display: block;
-	float: left;
-	width: 150px;
-	border-right: 1px solid;
-	border-left: 0px solid;
-	border-top: 0px solid;
-	border-bottom: 0px solid;
-	margin-right: 5px;
-	height: 17px;
+	height: 18px;
 }
 /* cadastro de estoque */
 div#cons_esto{

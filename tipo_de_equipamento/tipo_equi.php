@@ -37,17 +37,17 @@
 			</ul>
 		</div>
 <?php 
-if($total > 0){
+if($exibir > 0){
 do{ ?>	
 	<?php require("javascript_editar.php"); require("salvar.php"); require("deletar.php");?>
 	<div id="change_tipo_equi">
-		<form method="POST" id="teste<?=$exibir['id']?>" name="teste<?=$exibir['id']?>">
+		<form method="POST" id="tipo_equip<?=$exibir['id']?>" name="tipo_equip<?=$exibir['id']?>">
 			<input type='hidden' id='seacher_tipo_id' name='seacher_tipo_id' value='<?=$exibir['id']?>'>
 			<input type='text' id="seacher_tipo_equi<?=$exibir['id']?>" name="seacher_tipo_equi<?=$exibir['id']?>" class="seacher_tipo_equi" style='border-left: 1px solid;' disabled value="<?php echo $exibir['tipo_equip']; ?>">
 			<input type='text' id="seacher_tipo_sigla<?=$exibir['id']?>" name="seacher_tipo_sigla<?=$exibir['id']?>" class="seacher_tipo_sigla" disabled value="<?php echo $exibir['sigla_equip']; ?>" maxlength="3">
-			<input type="button" id="editar_tipo_equi<?=$exibir['id']?>" name="editar_tipo_equi<?=$exibir['id']?>" class="teste" value='Editar'>
-			<input type="submit" id="salvar_tipo_equi<?=$exibir['id']?>" name="salvar_tipo_equi<?=$exibir['id']?>" class='teste' value='Salvar'/>
-			<input type="submit" id="deletar_tipo_equi<?=$exibir['id']?>" name="deletar_tipo_equi<?=$exibir['id']?>" class='teste' value='Deletar'>
+			<input type="button" id="editar_tipo_equi<?=$exibir['id']?>" name="editar_tipo_equi<?=$exibir['id']?>" class="input_button" value='Editar'>
+			<input type="submit" id="salvar_tipo_equi<?=$exibir['id']?>" name="salvar_tipo_equi<?=$exibir['id']?>" class='input_button' value='Salvar'/>
+			<input type="submit" id="deletar_tipo_equi<?=$exibir['id']?>" name="deletar_tipo_equi<?=$exibir['id']?>" class='input_button' value='Deletar'>
 		</form>
 	</div>
 	<?php	}while($exibir = mysqli_fetch_assoc($selecionar));
