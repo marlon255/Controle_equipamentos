@@ -1,6 +1,6 @@
 <?php
 	if(isset($_POST['salvar_cad_comb'.$exibir_comb['id']])){
-		if(empty($_POST['cad_nome_comb'.$exibir_comb['id']])&&empty($_POST['cad_pref_comb'.$exibir_comb['id']])){
+		if(empty($_POST['cad_nome_comb'.$exibir_comb['id']]) || empty($_POST['cad_pref_comb'.$exibir_comb['id']]) || empty($_POST['cad_unid_comb'.$exibir_comb['id']])){
 					echo "<script>alert('Edite um campo antes de Salvar!')</script>";
 				}else{
 				$nome_new = $_POST['cad_nome_comb'.$exibir_comb['id']];

@@ -1,6 +1,6 @@
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="css/estilo.css">
+<link rel="stylesheet" type="text/css" href="../css/estilo.css">
 <script>
 function formatar(mascara, documento){
   var i = documento.value.length;
@@ -16,7 +16,7 @@ function formatar(mascara, documento){
 </head>
 <body>
 <div id="conteudo"><h2>Digitação de Parte Diaria</h2>
-	   <form id="form_cadastro" method="post" target="_self" action="">
+	   <form id="form_cadastro" method="post">
 		   <div id="cadastro_cima">
 			<div id="ln">
 				<label>Data</label><br>
@@ -95,12 +95,12 @@ function formatar(mascara, documento){
    <div id="visualizar">
 	<table>
 		<tr>
-			<td><?php echo $_POST[''] ?></td>
-			<td><?php echo $_POST[''] ?></td>
-			<td><?php echo $_POST[''] ?></td>
-			<td><?php echo $_POST[''] ?></td>
-			<td><?php echo $_POST[''] ?></td>
-			<td><?php echo $_POST[''] ?></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
 			<td id="del"><img id="dig_pd_deletar_pd" name="dig_pd_deletar_pd" src="img/dig_pd/delete.png" style="display:none;"/></td>
 		</tr>
 	</table>

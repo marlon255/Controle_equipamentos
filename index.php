@@ -14,12 +14,12 @@
 				<a href="cadastro_proprietario/cadastro_propr.php" target="iframe"><li id="drop_menu">Proprietário</li></a>
 				<a href="cadastro_equipamento/cadastro_equi.php" target="iframe"><li id="drop_menu">Equipamento</li></a>
 				<a href="cadastro_combustivel/cadastro_comb.php" target="iframe"><li id="drop_menu">Combustível</li></a>
-				<a href="cadastro_esto.php" target="iframe"><li id="drop_menu">Estoque</li></a>
+				<a href="cadastro_estoque/cadastro_esto.php" target="iframe"><li id="drop_menu">Estoque</li></a>
 			    </ul>
 			</li>
 			<li id="li_menu" class="dropando"><a>Digitação &raquo;</a>
 			    <ul id="drop_ul_menu">
-				<a href="dig_pd.php" target="iframe"><li id="drop_menu">Parte diaria</li></a>
+				<a href="digitacao_pd/digitacao_pd.php" target="iframe"><li id="drop_menu">Parte diaria</li></a>
 				<a href="dig_ent_abas.php" target="iframe"><li id="drop_menu">Entrada de Estoque</li></a>
 				<a href="dig_sai_abas.php" target="iframe"><li id="drop_menu">Saída de Estoque</li></a>
 			    </ul>

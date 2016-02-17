@@ -1,6 +1,6 @@
 <html>
 <head>
-<meta charset="UTF-8">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="../css/estilo.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 </head>

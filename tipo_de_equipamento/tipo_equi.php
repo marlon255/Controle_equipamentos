@@ -39,7 +39,7 @@
 <?php 
 if($exibir > 0){
 do{ ?>	
-	<?php require("javascript_editar.php"); require("salvar.php"); require("deletar.php");?>
+	<?php require("editar.php"); require("salvar.php"); require("deletar.php");?>
 	<div id="change_tipo_equi">
 		<form method="POST" id="tipo_equip<?=$exibir['id']?>" name="tipo_equip<?=$exibir['id']?>">
 			<input type='hidden' id='seacher_tipo_id' name='seacher_tipo_id' value='<?=$exibir['id']?>'>

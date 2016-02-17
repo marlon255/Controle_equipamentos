@@ -1,6 +1,6 @@
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="../css/estilo.css">
 <script>
 function formatar(mascara, documento){
@@ -20,7 +20,7 @@ function formatar(mascara, documento){
 		include_once('../php/conexao.php');
 		include_once('exibir_propri.php');
 		include_once('exibir_equip.php');
-		include_once('cadastrar.php');
+		include_once('cadastro.php');
 	?>
 <div id="conteudo"><h2>Cadastro de Equipamento</h2>
 	   <form id="form_cadastro" method="post" target="_self">
@@ -45,7 +45,7 @@ function formatar(mascara, documento){
 				<input type="text" name="cad_mod" id="cad_mod" required maxlength="30" />
 			</div>
 			<div id="ln">
-				<label>Série do equipamento</label>
+				<label>SÃ©rie do equipamento</label>
 				<input type="text" name="cad_serie" id="cad_serie" required maxlength="30" />
 			</div>
 			<div id="ln">
@@ -57,9 +57,9 @@ function formatar(mascara, documento){
 				<input type="text" name="cad_chassis" id="cad_chassis" required maxlength="17" />
 			</div>
 			<div id="ln">
-				<label>Proprietário</label><br>
+				<label>ProprietÃ¡rio</label><br>
 				<select name="propri" id="cad_propri" required>
-				<option disabled selected>Selecione o proprietário</option>
+				<option disabled selected>Selecione o proprietÃ¡rio</option>
 			<?php
 				if($exib_propri > 0){
 					do{
@@ -94,7 +94,7 @@ function formatar(mascara, documento){
 				<input type="text" name="cad_consumo" id="cad_consumo" required maxlength="20" />
 			</div>
 			<div id="ln">
-				<label>Ano de Fabricação</label>
+				<label>Ano de FabricaÃ§Ã£o</label>
 				<input type="text" name="cad_fabric" id="cad_fabric" required maxlength="4" OnKeyPress="formatar('####', this)" />
 			</div>
 		   </div>
@@ -111,7 +111,7 @@ function formatar(mascara, documento){
 				<input type="text" name="cad_hor_min" id="cad_hor_min" required maxlength="10" />
 			</div>
 			<div id="ln">
-				<label>Valor da Locação</label>
+				<label>Valor da LocaÃ§Ã£o</label>
 				<input type="text" name="cadastro_equi_valor" id="cadastro_equi_valor" required maxlength="20" />
 			</div>
 		   </div>
