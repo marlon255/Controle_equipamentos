@@ -1,0 +1,43 @@
+body{
+	background-color: #FDF5E6;
+}
+div#topo {
+	position: relative;
+	left: -40px;
+	margin: 0px;
+	padding: 0px;
+	width: 2521px;
+}
+div#topo ul li{
+	list-style-type:none;
+	margin:0;
+	padding-left: 0;
+	padding-top: 0;
+	height: 20px;
+	display: block;
+	float: left;
+	width: 150px;
+	padding-right: 4px;
+	border-right: 1px dotted;
+	border-bottom: 1px dotted;
+	margin:0;
+	padding-top: 0;
+	text-align: center;
+}
+div#topo ul li.primeiro{
+	border-left: 1px dotted;
+}
+div#inferior{
+	width: 2521px;
+}
+div#inferior input.equip_popup{
+	display: block;
+	float: left;
+	width: 150px;
+	border-right: 1px solid;
+	border-left: 0px solid;
+	border-top: 0px solid;
+	border-bottom: 0px solid;
+	margin-right: 5px;
+	height: 18px;
+}

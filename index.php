@@ -26,7 +26,7 @@
 			</li>
 			<li id="li_menu" class="dropando"><a>Consulta &raquo;</a>
 			    <ul id="drop_ul_menu">
-				<a href="cons_equip.php" target="iframe"><li id="drop_menu">Equipamento</li></a>
+				<a href="consulta_equipamento/consulta_equip.php" target="iframe"><li id="drop_menu">Equipamento</li></a>
 				<a href="cons_propr.php" target="iframe"><li id="drop_menu">Proprietário</li></a>
 				<a href="cons_pd.php" target="iframe"><li id="drop_menu">Parte diaria</li></a>
 				<a href="cons_ent_esto.php" target="iframe"><li id="drop_menu">Entrada de Estoque</li></a>
