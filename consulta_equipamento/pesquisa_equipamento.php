@@ -9,77 +9,49 @@
 	include_once('../php/conexao.php');
 ?>
 <?php
-//Testando o GET da pagina anterior
-/*	if(!empty($_GET['cons_equip_pref'])){
+$getpref   = $_GET['cons_equip_pref'];
+$getequip  = $_GET['cons_equip_equip'];
+$getpropri = $_GET['cons_equip_propri'];
+//SE TODOS OS CAMPOS DA BUSCA TIVER LIMPO ELE MOSTRA TUDO
+	//TESTANDO SE TODOS CAMPOS GET ESTAO LIMPOS
+	if(empty($getpref)&&empty($getequip)&&empty($getpropri)){
+		//SELECIONANDO A TABELA DO BANCO DE DADOS
+		$sql_total = "SELECT * FROM cadastro_equipamento";
+		//RODANDO A SELEÇÃO DE DADOS
+		$query_total = mysqli_query($conexao, $sql_total);
+		//EXIBINDO ARRAYS DOS DADOS
+		$exibir_total = mysqli_fetch_assoc($query_total);
+		//RODANDO LOOP PARA PEGAR TODAS AS ARRAYS NO BANCO.
+		do{
+		echo $exibir_total['id']." ".$exibir_total['cad_equip']."<br />";
+		}while($exibir_total = mysqli_fetch_assoc($query_total));
+//SE O CAMPO PROPRIETARIO FOI DIGITADO
+	//TESTANDO QUAL CAMPO FOI DIGITADO
+	}elseif(empty($getpref)&&empty($getequip)&&!empty($getpropri)){
+			$busca_propri = mysqli_real_escape_string($conexao, $_GET['cons_equip_propri']);
+			$sql_busca = "SELECT * FROM cadastro_equipamento WHERE cad_propri LIKE '$busca_propri'";
+			$query_busca = mysqli_query($conexao, $sql_busca);
+			$exibir_busca = mysqli_fetch_assoc($query_busca);
+			do{
+			echo $exibir_busca['id']." ".$exibir_busca['cad_equip']."<br />";
+			}while($exibir_busca = mysqli_fetch_assoc($query_busca));
+	}elseif(!empty($getpref)&&empty($getequip)&&empty($getpropri)){
 			$busca_pref = mysqli_real_escape_string($conexao, $_GET['cons_equip_pref']);
-			$sql_busca_pref = "SELECT * FROM cadastro_equipamento WHERE cad_pref LIKE '$busca_pref'";
-			$query_busca_pref = mysqli_query($conexao, $sql_busca_pref);
-			$exibir_busca_pref = mysqli_fetch_assoc($query_busca_pref);
+			$sql_pref = "SELECT * FROM cadastro_equipamento WHERE cad_pref LIKE '$busca_pref'";
+			$query_pref = mysqli_query($conexao, $sql_pref);
+			$exibir_pref = mysqli_fetch_assoc($query_pref);
 			do{
-			echo $exibir_busca_pref['id']." ".$exibir_busca_pref['cad_equip']."<br />";
-			}while($exibir_busca_pref = mysqli_fetch_assoc($query_busca_pref));
-			}
-		if(!empty($_GET['cons_equip_equip'])){
+			echo $exibir_pref['id']." ".$exibir_pref['cad_equip']."<br />";
+			}while($exibir_pref = mysqli_fetch_assoc($query_pref));
+	}elseif(empty($getpref)&&!empty($getequip)&&empty($getpropri)){
 			$busca_equip = mysqli_real_escape_string($conexao, $_GET['cons_equip_equip']);
-			$sql_busca_equip = "SELECT * FROM cadastro_equipamento WHERE cad_equip LIKE '$busca_equip'";
-			$query_busca_equip = mysqli_query($conexao, $sql_busca_equip);
-			$exibir_busca_equip = mysqli_fetch_assoc($query_busca_equip);
+			$sql_equip = "SELECT * FROM cadastro_equipamento WHERE cad_equip LIKE '$busca_equip'";
+			$query_equip = mysqli_query($conexao, $sql_equip);
+			$exibir_equip = mysqli_fetch_assoc($query_equip);
 			do{
-			echo $exibir_busca_equip['id']." ".$exibir_busca_equip['cad_equip']."<br />";
-				}while($exibir_busca_equip = mysqli_fetch_assoc($query_busca_equip));
-			}
-		if(!empty($_GET['cons_equip_mod'])){
-			$busca_mod = mysqli_real_escape_string($conexao, $_GET['cons_equip_mod']);
-			$sql_busca_mod = "SELECT * FROM cadastro_equipamento WHERE cad_mod LIKE '$busca_mod'";
-			$query_busca_mod = mysqli_query($conexao, $sql_busca_mod);
-			$exibir_busca_mod = mysqli_fetch_assoc($query_busca_mod);
-			do{
-			echo $exibir_busca_mod['id']." ".$exibir_busca_mod['cad_equip']."<br />";
-				}while($exibir_busca_mod = mysqli_fetch_assoc($query_busca_mod));
-			}
-*/
-	if(empty($_GET['cons_equip_pref']) && 
-	   empty($_GET['cons_equip_equip']) && 
-	   empty($_GET['cons_equip_mod']) && 
-	   empty($_GET['cons_equip_serie']) && 
-	   empty($_GET['cons_equip_placa']) && 
-	   empty($_GET['cons_equip_chassis']) && 
-	   empty($_GET['cons_equip_propri']) && 
-	   empty($_GET['cons_equip_data_cheg']) && 
-	   empty($_GET['cons_equip_hori_cheg']) && 
-	   empty($_GET['cons_equip_km_cheg'])){
-	   echo "<script>alert('Nenhum campo digitado.')</script>";
-		exit;
-	}else{
-		$busca_pref = mysqli_real_escape_string($conexao, $_GET['cons_equip_pref']);
-		$busca_equip = mysqli_real_escape_string($conexao, $_GET['cons_equip_equip']);
-		$busca_mod = mysqli_real_escape_string($conexao, $_GET['cons_equip_mod']);
-		$busca_serie = mysqli_real_escape_string($conexao, $_GET['cons_equip_serie']);
-		$busca_placa = mysqli_real_escape_string($conexao, $_GET['cons_equip_placa']);
-		$busca_chassis = mysqli_real_escape_string($conexao, $_GET['cons_equip_chassis']);
-		$busca_propri = mysqli_real_escape_string($conexao, $_GET['cons_equip_propri']);
-		$busca_data = mysqli_real_escape_string($conexao, $_GET['cons_equip_data_cheg']);
-		$busca_hori = mysqli_real_escape_string($conexao, $_GET['cons_equip_hori_cheg']);
-		$busca_km = mysqli_real_escape_string($conexao, $_GET['cons_equip_km_cheg']);
-		$sql_busca = "SELECT * FROM cadastro_equipamento WHERE 
-		cad_pref = '$busca_pref' OR 
-		cad_equip = '$busca_equip' OR 
-		cad_equip = '$busca_equip' OR 
-		cad_mod = '$busca_mod' OR 
-		cad_serie = '$busca_serie' OR 
-		cad_placa = '$busca_placa' OR 
-		cad_chassi = '$busca_chassis' OR 
-		cad_propri = '$busca_propri' OR 
-		cad_data = '$busca_data' OR 
-		cad_hori = '$busca_hori' OR 
-		cad_km = '$busca_km'";
-		$query_busca = mysqli_query($conexao, $sql_busca);
-		$exibir_busca = mysqli_fetch_assoc($query_busca);}
-	if($exibir_busca > 0){
-	do{
-		echo $exibir_busca['id']." ".$exibir_busca['cad_equip']."<br />";
-	}while($exibir_busca = mysqli_fetch_assoc($query_busca));
-	}	
+				echo $exibir_equip['id']." ".$exibir_equip['cad_equip']."<br />";
+			}while($exibir_equip = mysqli_fetch_assoc($query_equip));
+	}
 ?>
 <div id="consulta_equip">
 		<div id="topo">
