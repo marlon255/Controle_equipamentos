@@ -25,8 +25,24 @@ $getpropri = $_GET['cons_equip_propri'];
 		do{
 		echo $exibir_total['id']." ".$exibir_total['cad_equip']."<br />";
 		}while($exibir_total = mysqli_fetch_assoc($query_total));
-//SE O CAMPO PROPRIETARIO FOI DIGITADO
-	//TESTANDO QUAL CAMPO FOI DIGITADO
+//TESTANDO SE TODOS CAMPOS GET FORAM DIGITADOS
+	}elseif(!empty($getpref)&&!empty($getequip)&&!empty($getpropri)){
+		//BUSCANDO TODOS OS DADOS DIGITADOS
+		$busca_propri = mysqli_real_escape_string($conexao, $_GET['cons_equip_propri']);
+		$busca_pref = mysqli_real_escape_string($conexao, $_GET['cons_equip_pref']);
+		$busca_equip = mysqli_real_escape_string($conexao, $_GET['cons_equip_equip']);
+		//SELECIONANDO A TABELA DO BANCO DE DADOS COM OS DADOS DIGITADOS
+		$sql_todos = "SELECT * FROM cadastro_equipamento WHERE cad_propri LIKE '$busca_propri' AND cad_pref LIKE '$busca_pref' AND cad_equip LIKE '$busca_equip'";
+		//RODANDO A SELEÇÃO DE DADOS
+		$query_todos = mysqli_query($conexao, $sql_todos);
+		//EXIBINDO ARRAYS DOS DADOS
+		$exibir_todos = mysqli_fetch_assoc($query_todos);
+		//RODANDO LOOP PARA PEGAR TODAS AS ARRAYS NO BANCO.
+		do{
+		echo $exibir_todos['id']." ".$exibir_todos['cad_equip']."<br />";
+		}while($exibir_todos = mysqli_fetch_assoc($query_todos));
+//TESTANDO QUAL CAMPO FOI DIGITADO
+	//SE O CAMPO PROPRIETARIO FOI DIGITADO
 	}elseif(empty($getpref)&&empty($getequip)&&!empty($getpropri)){
 			$busca_propri = mysqli_real_escape_string($conexao, $_GET['cons_equip_propri']);
 			$sql_busca = "SELECT * FROM cadastro_equipamento WHERE cad_propri LIKE '$busca_propri'";
@@ -35,6 +51,7 @@ $getpropri = $_GET['cons_equip_propri'];
 			do{
 			echo $exibir_busca['id']." ".$exibir_busca['cad_equip']."<br />";
 			}while($exibir_busca = mysqli_fetch_assoc($query_busca));
+	//SE O CAMPO PREFIXO FOI DIGITADO
 	}elseif(!empty($getpref)&&empty($getequip)&&empty($getpropri)){
 			$busca_pref = mysqli_real_escape_string($conexao, $_GET['cons_equip_pref']);
 			$sql_pref = "SELECT * FROM cadastro_equipamento WHERE cad_pref LIKE '$busca_pref'";
@@ -43,6 +60,7 @@ $getpropri = $_GET['cons_equip_propri'];
 			do{
 			echo $exibir_pref['id']." ".$exibir_pref['cad_equip']."<br />";
 			}while($exibir_pref = mysqli_fetch_assoc($query_pref));
+	//SE O CAMPO EQUIPAMENTO FOI DIGITADO
 	}elseif(empty($getpref)&&!empty($getequip)&&empty($getpropri)){
 			$busca_equip = mysqli_real_escape_string($conexao, $_GET['cons_equip_equip']);
 			$sql_equip = "SELECT * FROM cadastro_equipamento WHERE cad_equip LIKE '$busca_equip'";
